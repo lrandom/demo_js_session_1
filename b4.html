@@ -1,0 +1,35 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+
+<body>
+    <div id="wrapper"></div>
+
+    <button onclick="addChild()">Add Child</button>
+</body>
+
+<script>
+    function addChild(){
+        let mang = [
+            "This is paragraph 1",
+            "This is paragraph 2",
+            "This is paragraph 3",
+            "This is paragraph 4",
+            "This is paragraph 5"
+        ]
+
+        let wrapperNode = document.getElementById('wrapper');
+        for (let i = 0;i<mang.length;i++) {
+            let p = document.createElement('p');
+            p.innerText = mang[i];
+            wrapperNode.appendChild(p);
+        }
+    }
+</script>
+</html>

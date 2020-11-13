@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+   <div id="wrapper">
+
+   </div>
+
+   <div id="wrapper2">
+       Hello World <p>This is HTML</p>
+   </div>
+
+
+   <div class="wrapper"></div>
+   <div class="wrapper"></div>
+   <div class="wrapper"></div>
+
+
+   <div>
+       <div id="parent">
+           <div>a</div>
+           <div>b</div>
+           <div>c</div>
+       </div><div></div>
+   </div>
+
+
+   <img src="https://icdn.dantri.com.vn/thumb_w/640/2017/1-1510967806416.jpg" />
+
+   <div id="parent-2">
+       <div>1</div>
+       <div>2</div>
+       <div>3</div>
+       <div>4</div>
+
+   </div>
+</body>
+
+<script type="text/javascript">
+   /*let wrapperNode = document.getElementById('wrapper');
+   wrapperNode.innerText = "Hi world";
+
+   let wrapperNode2 = document.getElementById('wrapper2');
+   console.log(wrapperNode2.innerText);//Hello World
+   console.log(wrapperNode2.innerHTML);//Hello World <p>This is HTML</p>*/
+
+   /*let nodes = document.getElementsByTagName('div');
+   for (let i=0;i<nodes.length;i++){
+       nodes[i].innerText = "HI";
+   }
+
+   let nodesWrapper = document.getElementsByClassName('wrapper');
+   for (let i=0;i<nodesWrapper.length;i++){
+       nodesWrapper[i].innerText = "Hello";
+   }*/
+
+   //let parentNode = document.getElementById('parent');
+   //parentNode.innerText="TEst";
+   ///let childs = parentNode.children;
+   //console.log(childs.length);
+   //for (let i =0;i<childs.length;i++){
+      // childs[i].innerText = "Hi các bạn";
+   //}
+   //parentNode.nextElementSibling.innerText ="Sibling";
+   //parentNode.parentElement.innerHTML = "hi";
+
+   //parentNode.addEventListener('click', event => {
+   //});
+   //tabnine
+   //emmet
+
+
+   let parentNode = document.getElementById('parent');
+   parentNode.addEventListener('click', event => {
+       parentNode.style.backgroundColor = 'red';
+   })
+
+
+   let img =  document.getElementsByTagName('img');
+   img = img[0];
+   img.addEventListener('click', function(){
+       img.setAttribute('src','https://aphoto.vn/wp-content/uploads/2018/02/anh-dep-chup-dien-thoai.jpg');
+   })
+
+
+   let parentNode2 = document.getElementById('parent-2');
+   parentNode2.addEventListener('click',function(){
+       let newNode = document.createElement('div');
+       newNode.innerHTML = ``;//backstick
+       parentNode2.appendChild(newNode);
+   })
+
+
+</script>
+
+<script>
+ /*   let a = 10;
+    alert(a);*/
+</script>
+</html>
