@@ -1,0 +1,77 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<body>
+<div id="slider">
+    <div class="inner-slider">
+        <img src="images/1.jpg" alt="">
+        <img src="images/2.jpg" alt="">
+        <img src="images/3.jpg" alt="">
+    </div>
+
+
+    <div class="buttons">
+        <button onclick="prev(this)">Prev</button>
+        <button onclick="next(this)">Next</button>
+    </div>
+</div>
+
+<style>
+    #slider{
+        width:500px;
+        margin:0px auto;
+    }
+
+    #slider .inner-slider{
+        position: relative;
+        overflow: hidden;
+        display: block;
+        width:500px;
+        height: 350px;
+    }
+
+    #slider .inner-slider img{
+        position: absolute;
+        width:500px;
+        height:350px;
+    }
+
+    #slider .buttons {
+        display: flex;
+        justify-content: space-between;
+    }
+
+
+</style>
+
+<script>
+    let sliderNode = document.getElementById("slider");
+   function prev(currentNode){
+       let imageNodes = sliderNode.getElementsByTagName('img');
+       let topImageNode = imageNodes[imageNodes.length-1];
+       //console.log(topImageNode);
+
+       let innerSlider = sliderNode.getElementsByClassName('inner-slider')[0];
+       innerSlider.prepend(topImageNode);
+   }
+
+   function next(currentNode){
+      let imageNodes = sliderNode.getElementsByTagName('img');
+      let bottomImageNode = imageNodes[0];
+     // console.log(topImageNode);
+
+      let innerSlider = sliderNode.getElementsByClassName('inner-slider')[0];
+      innerSlider.append(bottomImageNode);
+   }
+
+
+
+</script>
+</body>
+</html>

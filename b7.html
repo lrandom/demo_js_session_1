@@ -1,0 +1,100 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<body>
+<form action="" onSubmit="return validate()">
+    <div>
+        <label>Username</label>
+        <input type="text" name="username" class="username">
+    </div>
+
+    <div class="error error-username"></div>
+
+    <div>
+        <label>Email</label>
+        <input type="text" name="email" class="email">
+    </div>
+
+    <div class="error error-email"></div>
+
+    <div>
+        <label>Password</label>
+        <input type="password" name="password" class="password">
+    </div>
+
+    <div class="error error-password"></div>
+
+    <input type="Submit" value="Submit">
+</form>
+
+
+<style>
+    form {
+        width: 500px;
+        margin: 0px auto;
+    }
+
+    div {
+        margin-top: 10px;
+    }
+
+    label {
+        width: 100px;
+        display: inline-block;
+    }
+
+    input[type="submit"] {
+        margin-top: 10px;
+    }
+
+    .error{
+        color:red;
+    }
+
+
+</style>
+
+<script>
+    function validate(){
+        let nodeUsername = document.getElementsByClassName('username')[0];
+        let username = nodeUsername.value;
+        let errorNodes = document.getElementsByClassName('error');
+        for (let i =0;i<errorNodes.length;i++){
+            errorNodes[i].innerText = '';
+        }
+
+        if(username == null || username ==''){
+            //let errorLineNode = document.getElementsByClassName('error-username')[0];
+            let errorLineNode = nodeUsername.parentElement.nextElementSibling;
+            errorLineNode.innerText = "Please fill out the above field";
+            return false;
+        }
+
+        let nodeEmail = document.getElementsByClassName('email')[0];
+        let email = nodeEmail.value;
+        if(email ==null || email ==''){
+            let errorLineNode = nodeEmail.parentElement.nextElementSibling;
+            errorLineNode.innerText = "Please fill out the above field";
+            return false;
+        }
+
+        let nodePassword = document.getElementsByClassName('password')[0];
+        let password= nodePassword.value;
+        if(password ===null || password ==='' || password.length===0){
+            let errorLineNode = nodePassword.parentElement.nextElementSibling;
+            errorLineNode.innerText = "Please fill out the above field";
+            return false;
+        }
+
+        //allow post data
+        return true;
+    }
+</script>
+</body>
+</html>

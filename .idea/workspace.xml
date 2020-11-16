@@ -1,7 +1,31 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
+  <component name="BranchesTreeState">
+    <expand>
+      <path>
+        <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="LOCAL_ROOT" type="e8cecc67:BranchNodeDescriptor" />
+      </path>
+      <path>
+        <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="REMOTE_ROOT" type="e8cecc67:BranchNodeDescriptor" />
+      </path>
+      <path>
+        <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="REMOTE_ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="GROUP_NODE:origin" type="e8cecc67:BranchNodeDescriptor" />
+      </path>
+    </expand>
+    <select />
+  </component>
   <component name="ChangeListManager">
-    <list default="true" id="c442fbbe-0203-4161-b9b7-4282c801c000" name="Default Changelist" comment="" />
+    <list default="true" id="c442fbbe-0203-4161-b9b7-4282c801c000" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/b6.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/b7.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/b8.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Bài tập Javascript session 4 (1).docx" beforeDir="false" afterPath="$PROJECT_DIR$/Bài tập Javascript session 4 (1).docx" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -14,10 +38,14 @@
       </list>
     </option>
   </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
   <component name="GitToolBoxStore">
     <option name="projectConfigVersion" value="2" />
   </component>
   <component name="ProjectId" id="1kEjwp0SmSCdYXkn1j09uvfQWNp" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
@@ -27,6 +55,7 @@
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="nodejs_package_manager_path" value="npm" />
     <property name="settings.editor.selected.configurable" value="editor.preferences.fonts.default" />
   </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
@@ -37,17 +66,38 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1605272887400</updated>
-      <workItem from="1605272889554" duration="3129000" />
+      <workItem from="1605272889554" duration="3585000" />
+      <workItem from="1605529537511" duration="4589000" />
     </task>
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="3" />
   </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
+  </component>
   <component name="WindowStateProjectService">
-    <state x="469" y="214" key="SettingsEditor" timestamp="1605274895887">
-      <screen x="0" y="23" width="1920" height="1084" />
+    <state x="693" y="373" key="#com.intellij.fileTypes.FileTypeChooser" timestamp="1605530668495">
+      <screen x="0" y="23" width="1920" height="1083" />
     </state>
+    <state x="693" y="373" key="#com.intellij.fileTypes.FileTypeChooser/1920.323.1440.877/0.23.1920.1083/-1920.143.1920.1057@0.23.1920.1083" timestamp="1605530668495" />
+    <state x="469" y="214" key="SettingsEditor" timestamp="1605531782041">
+      <screen x="0" y="23" width="1920" height="1083" />
+    </state>
+    <state x="469" y="214" key="SettingsEditor/1920.323.1440.877/0.23.1920.1083/-1920.143.1920.1057@0.23.1920.1083" timestamp="1605531782041" />
     <state x="469" y="214" key="SettingsEditor/1920.323.1440.877/0.23.1920.1084/-1920.143.1920.1057@0.23.1920.1084" timestamp="1605274895887" />
+    <state x="618" y="266" key="run.anything.popup" timestamp="1605534124246">
+      <screen x="0" y="23" width="1920" height="1083" />
+    </state>
+    <state x="618" y="266" key="run.anything.popup/1920.323.1440.877/0.23.1920.1083/-1920.143.1920.1057@0.23.1920.1083" timestamp="1605534124246" />
   </component>
 </project>
